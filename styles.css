@@ -1,0 +1,23 @@
+
+/* General Website Colours */
+body {
+    background-color: blue;
+}
+
+.light {
+    background-color: #E8E6D9;
+}
+
+.dark {
+    background-color: #002939;
+}
+
+.hidden {
+    display: none;
+}
+
+/* personal image */
+.profile {
+    width: "0px";
+    height: auto;
+}
