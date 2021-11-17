@@ -3,6 +3,7 @@
 body {
     /* background-color: blue; */
     /* width: fit-content; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .light {
@@ -21,7 +22,6 @@ body {
 /* ************** navigation bar div ************** */
 .navigation-bar {
     /* background-color: blueviolet; */
-
 }
 
 .navbar-brand {
@@ -41,20 +41,28 @@ body {
 .logo {
     position: relative;
     left: 100px;
-    top: 130px;
+    top: 120px;
     pointer-events: none;
 }
 
+/* Byron Wang text */
 .intro-big-text {
     position: relative;
-    left: 650px;
-    bottom: 300px;
+    left: 120px;
+    bottom: -100px;
+}
+
+/* About me subheading */
+.about-me {
+    position: relative;
+    left: 600px;
+    bottom: 350px;
 }
 
 .intro-paragraph {
     position: relative;
     left: 600px;
-    bottom: 280px;
+    bottom: 330px;
     width: 50%;
     font-size: 140%;
 }
@@ -62,5 +70,27 @@ body {
 .profile {
     position: relative;
     left: 50px;
-    top: 100px;
+    top: 80px;
+}
+
+.indiv-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+} 
+
+.icons {
+    text-align: center;
+    position: relative;
+    bottom: 390px;
+    right: 405px;
+}
+
+a {
+    color: grey;
+    /* text-decoration: none; */
+}
+
+a:hover {
+   color: #800020;
 }
