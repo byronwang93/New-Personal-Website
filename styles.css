@@ -1,7 +1,8 @@
 
 /* General Website Colours */
 body {
-    background-color: blue;
+    /* background-color: blue; */
+    /* width: fit-content; */
 }
 
 .light {
@@ -16,8 +17,50 @@ body {
     display: none;
 }
 
+
+/* ************** navigation bar div ************** */
+.navigation-bar {
+    /* background-color: blueviolet; */
+
+}
+
+.navbar-brand {
+    bottom: 130px;
+    position: relative;
+}
+
+/* ************** introduction div ************** */ 
+.intro {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    /* background-color: blue; */
+}
+
 /* personal image */
+.logo {
+    position: relative;
+    left: 100px;
+    top: 130px;
+    pointer-events: none;
+}
+
+.intro-big-text {
+    position: relative;
+    left: 650px;
+    bottom: 300px;
+}
+
+.intro-paragraph {
+    position: relative;
+    left: 600px;
+    bottom: 280px;
+    width: 50%;
+    font-size: 140%;
+}
+
 .profile {
-    width: "10px";
-    height: auto;
+    position: relative;
+    left: 50px;
+    top: 100px;
 }
