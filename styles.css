@@ -8,6 +8,7 @@ body {
 
 .light {
     background-color: #E8E6D9;
+    /* background-color: #F2f2f2; */
 }
 
 .dark {
@@ -20,36 +21,27 @@ body {
 
 
 /* ************** navigation bar div ************** */
-.navigation-bar {
-    /* background-color: blueviolet; */
-}
 
 .navbar-brand {
-    bottom: 130px;
+    bottom: 200px;
     position: relative;
 }
 
 /* ************** introduction div ************** */ 
-.intro {
-    position: relative;
-    height: 1000px;
-    width: 100%;
-    /* background-color: blue; */
-}
-
-/* personal image */
-.logo {
-    position: relative;
-    left: 100px;
-    top: 120px;
-    pointer-events: none;
-}
 
 /* Byron Wang text */
 .intro-big-text {
     position: relative;
     left: 120px;
-    bottom: -100px;
+    bottom: -125px;
+}
+
+.student-text {
+    font-size: 20px;
+    position: relative;
+    color: gray;
+    left: 56px;
+    top: 140px;
 }
 
 /* About me subheading */
@@ -70,7 +62,7 @@ body {
 .profile {
     position: relative;
     left: 50px;
-    top: 80px;
+    top: 110px;
 }
 
 .indiv-icon {
@@ -79,11 +71,16 @@ body {
     cursor: pointer;
 } 
 
+.underneath-pic {
+    position: relative;
+    right: 25px;
+}
+
 .icons {
     text-align: center;
     position: relative;
-    bottom: 390px;
-    right: 405px;
+    right: 404px;
+    top: 160px;
 }
 
 a {
@@ -93,4 +90,40 @@ a {
 
 a:hover {
    color: #800020;
+}
+
+/* ************** projects div ************** */
+#projects {
+    background-color: white;
+    height: 800px;
+}
+/* 
+#EAE7DC;
+#F2f2f2;
+#C4DBF6; */
+
+
+
+/* ************** blog div ************** */
+#blog {
+    /* background-color: #E8E6D9; */
+    height: 800px;
+}
+
+
+/* ************** contact-me div ************** */
+#contact-me {
+    background-color: white;
+    height: 800px;
+}
+
+
+/* ************** footer ************** */
+.footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.footer p {
+    font-size: 20px;
 }
