@@ -29,6 +29,9 @@ body {
 
 /* ************** introduction div ************** */ 
 
+#about-me {
+}
+
 /* Byron Wang text */
 .intro-big-text {
     position: relative;
@@ -115,7 +118,65 @@ a:hover {
 #contact-me {
     background-color: white;
     height: 800px;
+    position: relative;
+    text-align: left;
+    padding-top: 2%;
 }
+
+.contact-subheading {
+    /* position: fixed; */
+    position: relative;
+    left: 45%;
+    /* left: 50%; */
+    /* transform: translate(-50%); */
+
+}
+
+.contact-form {
+    position: relative;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    font-size: large;
+    left: 2%;
+}
+
+.name {
+    position: relative;
+}
+
+.mail {
+    position: relative;
+    top: 50px;
+    left: -267px;
+}
+
+.subject {
+    position: relative;
+    top: 100px;
+    left: -571px;
+}
+
+.message {
+    position: absolute;
+    top: 160px;
+    /* left: -875px; */
+    right: 890px;
+}
+
+.submit {
+    position: absolute;
+    top: 150px;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    font-size: large;
+}
+
 
 
 /* ************** footer ************** */
