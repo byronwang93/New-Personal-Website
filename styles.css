@@ -19,24 +19,31 @@ body {
     display: none;
 }
 
+/* general panel attributes */
+.panel {
+    margin: 200px;
+    width: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: white;
+    color: #000;
+    border-radius: 6px;
 
-/* ************** navigation bar div ************** */
-
-.navbar-brand {
-    bottom: 200px;
-    position: relative;
+    display: block;
 }
 
 /* ************** introduction div ************** */ 
 
 #about-me {
+    height: 880px;
 }
 
 /* Byron Wang text */
 .intro-big-text {
     position: relative;
     left: 120px;
-    bottom: -125px;
+    /* bottom: -125px; */
+    bottom: -195px;
 }
 
 .student-text {
@@ -44,7 +51,8 @@ body {
     position: relative;
     color: gray;
     left: 56px;
-    top: 140px;
+    /* top: 140px; */
+    top: 210px;
 }
 
 /* About me subheading */
@@ -65,7 +73,8 @@ body {
 .profile {
     position: relative;
     left: 50px;
-    top: 110px;
+    /* top: 110px; */
+    top: 160px;
 }
 
 .indiv-icon {
@@ -83,7 +92,8 @@ body {
     text-align: center;
     position: relative;
     right: 404px;
-    top: 160px;
+    /* top: 160px; */
+    top: 230px;
 }
 
 a {
@@ -100,10 +110,12 @@ a:hover {
     background-color: white;
     height: 800px;
 }
-/* 
-#EAE7DC;
-#F2f2f2;
-#C4DBF6; */
+
+.projects {
+    top: 20px;
+    text-align: center;
+    position: relative;
+}
 
 
 
@@ -113,69 +125,12 @@ a:hover {
     height: 800px;
 }
 
-
-/* ************** contact-me div ************** */
-#contact-me {
-    background-color: white;
-    height: 800px;
-    position: relative;
-    text-align: left;
-    padding-top: 2%;
-}
-
-.contact-subheading {
-    /* position: fixed; */
-    position: relative;
-    left: 45%;
-    /* left: 50%; */
-    /* transform: translate(-50%); */
-
-}
-
-.contact-form {
+.blog {
+    top: 20px;
+    text-align: center;
     position: relative;
 }
 
-input {
-    width: 300px;
-    height: 50px;
-    font-size: large;
-    left: 2%;
-}
-
-.name {
-    position: relative;
-}
-
-.mail {
-    position: relative;
-    top: 50px;
-    left: -267px;
-}
-
-.subject {
-    position: relative;
-    top: 100px;
-    left: -571px;
-}
-
-.message {
-    position: absolute;
-    top: 160px;
-    /* left: -875px; */
-    right: 890px;
-}
-
-.submit {
-    position: absolute;
-    top: 150px;
-}
-
-textarea {
-    width: 50%;
-    height: 100px;
-    font-size: large;
-}
 
 
 
