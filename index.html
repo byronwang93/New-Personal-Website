@@ -48,15 +48,14 @@
         </div>
     </nav>
 
-    <!-- PROBLEM STARTS HERE -->
-
     <!-- about me container -->
     <div class="container" id="about-me">
-      <img class="profile" src="images/circular linkedin picture.png" height="350" width="350" alt="image-of-me">
+      
+      <div class="left-images">
+        
+        <img class="profile" src="images/circular linkedin picture.png" height="350" width="350" alt="image-of-me">
 
-      <!-- PROBLEM ENDS HERE!!!!!!!!!! -->
-
-      <div class="underneath-pic">
+        <div class="underneath-pic">
           <h1 class="intro-big-text">Byron Wang</h1>
           <h2 class="student-text">MBIM + CPSC Undergraduate @ UBC</h2>
           <div class="icons">
@@ -66,46 +65,66 @@
               <a href="https://github.com/byronwang93" target="_blank"><i class="indiv-icon fab fa-github fa-2x"></i></a>
               <a href="https://www.instagram.com/byronwang123919/" target="_blank"><i class="indiv-icon fab fa-instagram fa-2x"></i></a> 
           </div>
+      
+        </div>
       </div>
 
-      <!-- <h1 class="intro-big-text">Byron Wang</h1> -->
-      <h1 class="subheading about-me">About Me</h1>
-      <p class="intro-paragraph">I'm currently a third year combined computer science + microbiology & immunology student at the University of British Columbia looking to demonstrate and improve upon my web development skills!
+      <div class="right-text">
+        <!-- <h1 class="intro-big-text">Byron Wang</h1> -->
+        <h1 class="subheading about-me">About Me</h1>
+        <p class="intro-paragraph">I'm currently a third year combined computer science + microbiology & immunology student at the University of British Columbia looking to demonstrate and improve upon my web development skills!
           <br> <br>
-      Since I'm relatively new to the computer science field, I'll be using this webpage as a personal portfolio on projects, hackathons, life updates, and anything I feel like talking about so feel free to read along to follow my progression in computing!
+        Since I'm relatively new to the computer science field, I'll be using this webpage as a personal portfolio on projects, hackathons, life updates, and anything I feel like talking about so feel free to read along to follow my progression in computing!
           <br> <br>
-      My contact/socials are underneath my profile picture to the left so I encourage you to connect/reach out to me if you're looking to potentially collaborate on a project idea or just want to chat! Thanks for sticking around! :') 
-      </p>
+        My contact/socials are underneath my profile picture to the left so I encourage you to connect/reach out to me if you're looking to potentially collaborate on a project idea or just want to chat! Thanks for sticking    around! :') 
+        </p>
+      </div>
 
   </div>
+
+  <hr>
 
   <!-- projects container -->
   <div class="container-fluid" id="projects">
     <h1 class="subheading projects">Projects</h1>
   </div>
 
+  <hr>
+
   <!-- blog container -->
   <div class="container" id="blog">
     <h1 class="subheading blog">Blog</h1>
-    <a href="introBlog.html" class="panel">
-      <h3>Welcome to my website!</h3>
-      <img src="images/introblogpicture.jpeg" alt="" class="blogImages">
-    </a>
 
-    <div class="card">
-      <div class="image-data">
-        <div class="background-image"></div>
-        <div class="publication-details">
-          <a href="#" class="author"> <i class="fas fa-user"></i> Byron Wang </a>
-          <span class="date"> <i class="fas fa-calendar-alt"></i> December 21, 2021 </span>
-        </div>
+
+    <div class="blog-post">
+      <div class="blog-post-img">
+        <img src="images/blog2.jpeg" alt="" class="blogImages">
       </div>
-      <div class="post-data">
-        <h2 class="card-title">Welcome to my website!</h2>
-        <p class="description">An introductory blog for me to test out the waters and see what works for me!</p>
-        <div class="cta">
-          <a href="#">Read more &rarr;</a>
+      <div class="blog-post-info">
+        <div class="blog-post-date">
+          <span>Monday</span>
+          <span>December 27 2021</span>
         </div>
+        <h2 class="blog-post-title">My first hackathon experience.</h2>
+        <p class="blog-post-text">With only introductory web development and word of mouth from friends, here's how my first hackathon went (and what I learned from it). o_o 
+        </p>
+        <a href="#" class="blog-post-cta">Read more</a>
+      </div>
+    </div>
+
+    <div class="blog-post">
+      <div class="blog-post-img">
+        <img src="images/blog1.jpeg" alt="" class="blogImages">
+      </div>
+      <div class="blog-post-info">
+        <div class="blog-post-date">
+          <span>Monday</span>
+          <span>December 20 2021</span>
+        </div>
+        <h2 class="blog-post-title">Welcome to my website!</h2>
+        <p class="blog-post-text">The first blog on the site! :) Check me out to learn how I got to this point and what I intend to do from here!
+        </p>
+        <a href="#" class="blog-post-cta">Read more</a>
       </div>
     </div>
 
@@ -114,7 +133,7 @@
 
   <div class="footer container-fluid">
       <footer id="footer">
-        <p>© Byron Wang 2021</p>
+        <p>© Byron Wang 2021 :')</p>
       </footer>
   </div>
 

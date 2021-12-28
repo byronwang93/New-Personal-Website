@@ -1,28 +1,36 @@
 
 /* General Website Colours */
-/* body {
-    font-family: 'Montserrat', sans-serif;
-} */
 
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
-.content {
+body {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 0;
     padding: 0;
-    height: 300vh;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* background-color: lawngreen; */
 }
 
 * {
     box-sizing: inherit;
+}
+
+nav a {
+    font-size: 20px;
 }
 
 .light {
@@ -54,7 +62,6 @@ body, html {
 
 .blogImages {
     width: 100px;
-
 }
 
 /* ************** introduction div ************** */ 
@@ -63,12 +70,44 @@ body, html {
     height: 880px;
     position: relative;
     width: 100%;
+    padding: 0;
+    display: flex;
+}
+
+
+/* right side of intro (text) -------------------------------- */
+.right-text {
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+
+/* About me subheading */
+.about-me {
+    position: relative;
+    top: 20%;
+}
+
+.intro-paragraph {
+    position: relative;
+    top: 23%;
+    width: 100%;
+    font-size: 140%;
+}
+
+
+/* left side of intro -------------------------------- */
+.left-images {
+    width: 40%;
+    height: 100%;
+    justify-content: center;
+    align-content: flex-start;
 }
 
 /* Byron Wang text */
 .intro-big-text {
     position: relative;
-    left: 120px;
+    left: 20%;
     bottom: -195px;
 }
 
@@ -76,30 +115,13 @@ body, html {
     font-size: 20px;
     position: relative;
     color: gray;
-    left: 56px;
-    /* top: 140px; */
+    left: 9%;
     top: 210px;
-}
-
-/* About me subheading */
-.about-me {
-    position: relative;
-    margin-left: 600px;
-    bottom: 350px;
-}
-
-.intro-paragraph {
-    position: relative;
-    left: 600px;
-    bottom: 330px;
-    width: 50%;
-    font-size: 140%;
 }
 
 .profile {
     position: relative;
-    left: 50px;
-    /* top: 110px; */
+    left: 18%;
     top: 160px;
 }
 
@@ -111,20 +133,18 @@ body, html {
 
 .underneath-pic {
     position: relative;
-    right: 25px;
+    left: 6%;
 }
 
 .icons {
     text-align: center;
     position: relative;
-    right: 404px;
-    /* top: 160px; */
+    right: 5%;
     top: 230px;
 }
 
 a {
     color: grey;
-    /* text-decoration: none; */
 }
 
 a:hover {
@@ -133,12 +153,14 @@ a:hover {
 
 /* ************** projects div ************** */
 #projects {
-    background-color: white;
     height: 800px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .projects {
-    top: 70px;
+    padding-top: 6%;
     text-align: center;
     position: relative;
 }
@@ -148,14 +170,144 @@ a:hover {
 /* ************** blog div ************** */
 #blog {
     /* background-color: #E8E6D9; */
-    height: 800px;
+    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    flex-direction: column;
 }
 
 .blog {
-    top: 50px;
-    text-align: center;
+    padding-top: 6%;
+    margin-bottom: 5%;
+    position: relative;
+    display: flex;
+}
+
+#blog h2 {
+    font-size: 28px;
+}
+
+/* styles the actual box that each blog-post goes into */
+.blog-post {
+    width: 100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: white;
+    box-shadow: 0 1.4rem 8rem rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+    margin: 2% 0;
+}
+
+.blog-post-img {
+    /* limits the size of the image */
+    min-width: 20rem;
+    /* originally 35, 35, 30 */
+    max-width: 20rem;
+    height: 18rem;
+    /* makes the image overlap with the display */
+    transform: translate(-8rem);
     position: relative;
 }
+
+.blog-post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.8rem;
+}
+
+.blog-post-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,0.5);
+    border-radius: 0.8rem;
+}
+
+.blog-post-date {
+    display: block;
+    color: rgba(0,0,0,0.5);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+.blog-post-title {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 2rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+.blog-post-text {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    color: rgba(0,0,0,0.7);
+}
+
+.blog-post-cta {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: black;
+    /* background-image: linear-gradient(to right, red 0%, lightgreen 100%); */
+    background-color: #c96567;
+    border-radius: 0.8rem;
+    text-decoration: none;
+}
+
+.blog-post-cta:hover {
+    /* reverse the gradient from above */
+    /* background-image: linear-gradient(to right, lightgreen 0%, red 100%); */
+    background-color: #800020;
+    color: white;
+}
+
+@media screen and (max-width: 1068px) {
+    .blog-post {
+        max-width: 80rem;
+    }
+
+    .blog-post-img {
+        min-width: 30rem;
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .blog-post {
+        max-width: 70rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog-post {
+        padding: 2.5rem;
+        flex-direction: column;
+    }
+
+    .blog-post-img {
+        min-width: 100%;
+        max-width: 100%;
+        /* make it translate on y and no longer on x */
+        transform: translate(0, -8rem);
+    }
+}
+
+
+
+
 
 
 
@@ -164,7 +316,7 @@ a:hover {
 .footer {
     text-align: center;
     margin-top: 25px;
-    /* background-color: white; */
+    padding-bottom: 1%;
 }
 
 .footer p {
