@@ -18,9 +18,14 @@ body {
     padding: 0;
 }
 
-/* hr {
-    color: #800020;
-} */
+.mode {
+    color: black;
+    font-weight: 900;
+}
+
+.mode:hover {
+    color: goldenrod;
+}
 
 .container {
     margin: 0;
@@ -162,6 +167,7 @@ a:hover {
     margin: 50px auto;
     width: 100%;
     position: relative;
+    margin-bottom: 10%;
 }
 
 .projects {
@@ -246,6 +252,11 @@ a:hover {
     font-weight: 400;
 }
 
+.bottom a:hover {
+    background-color: #800020;
+    color: white;
+}
+
 .project-icon, .scroll-icon {
     position: absolute;
     background: grey;
@@ -264,7 +275,9 @@ a:hover {
     left: 50%;
     transform: translateX(-50%);
     font-size: 30px;
-    color: white;
+    color: black;
+    background: grey;
+    z-index: 2;
 }
 
 .row-1 .project-icon {
@@ -372,15 +385,12 @@ a:hover {
     text-transform: uppercase;
     font-size: 1.2rem;
     color: black;
-    /* background-image: linear-gradient(to right, red 0%, lightgreen 100%); */
     background-color: #c96567;
     border-radius: 0.8rem;
     text-decoration: none;
 }
 
 .blog-post-cta:hover {
-    /* reverse the gradient from above */
-    /* background-image: linear-gradient(to right, lightgreen 0%, red 100%); */
     background-color: #800020;
     color: white;
 }
