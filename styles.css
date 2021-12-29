@@ -180,7 +180,7 @@ a:hover {
 .center-line {
     position: absolute;
     height: 58%;
-    width: 4px;
+    width: 6px;
     background: grey;
     left: 50%;
     transform: translate(-50%);
@@ -213,7 +213,7 @@ a:hover {
     height: 15px;
     width: 15px;
     background-color: white;
-    top: 28px;
+    top: 35px;
     z-index: -1;
     transform: rotate(45deg);
 }
@@ -234,12 +234,13 @@ a:hover {
 }
 
 .row section .details .sectionTitle {
-    font-size: 22px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .row p {
     margin: 10px 0 17px 0;
+    font-size: 18px;
 }
 
 .bottom a {
@@ -248,7 +249,7 @@ a:hover {
     color: black;
     padding: 7px 15px;
     border-radius: 5px;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -260,10 +261,10 @@ a:hover {
 .project-icon, .scroll-icon {
     position: absolute;
     background: grey;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     text-align: center;
-    line-height: 40px;
+    line-height: 60px;
     border-radius: 50%;
     top: 13px;
     font-size: 30px;
@@ -281,15 +282,19 @@ a:hover {
 }
 
 .row-1 .project-icon {
-    right: -60px;
+    right: -70px;
     top: 13px;
 }
 
 .row-2 .project-icon {
-    left: -60px;
+    left: -70px;
     top: 13px;
 }
 
+
+.details span {
+    font-size: 18px;
+}
 
 /* ************** blog div ************** */
 #blog {
