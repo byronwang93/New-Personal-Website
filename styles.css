@@ -18,6 +18,10 @@ body {
     padding: 0;
 }
 
+/* hr {
+    color: #800020;
+} */
+
 .container {
     margin: 0;
     padding: 0;
@@ -144,7 +148,7 @@ nav a {
 }
 
 a {
-    color: grey;
+    color: #c96567;
 }
 
 a:hover {
@@ -153,18 +157,125 @@ a:hover {
 
 /* ************** projects div ************** */
 #projects {
-    height: 800px;
-    padding: 0;
-    margin: 0;
+    height: fit-content;
+    padding: 0 20px;
+    margin: 50px auto;
     width: 100%;
+    position: relative;
 }
 
 .projects {
     padding-top: 6%;
+    padding-bottom: 6%;
     text-align: center;
     position: relative;
 }
 
+.center-line {
+    position: absolute;
+    height: 58%;
+    width: 4px;
+    background: grey;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40%;
+}
+
+#projects .row {
+    display: flex;
+}
+
+#projects .row-1 {
+    justify-content: flex-start;
+}
+
+#projects .row-2 {
+    justify-content: flex-end;
+}
+
+#projects .row section {
+    background-color: white;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+
+.row section::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    top: 28px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+.row-1 section::before {
+    right: -7px;
+}
+
+.row-2 section::before {
+    left: -7px;
+}
+
+.row section .bottom,
+.row section .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row section .details .sectionTitle {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.row p {
+    margin: 10px 0 17px 0;
+}
+
+.bottom a {
+    text-decoration: none;
+    background: #c96567;
+    color: black;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.project-icon, .scroll-icon {
+    position: absolute;
+    background: grey;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    top: 13px;
+    font-size: 30px;
+    color: black;
+}
+
+.scroll-icon {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: white;
+}
+
+.row-1 .project-icon {
+    right: -60px;
+    top: 13px;
+}
+
+.row-2 .project-icon {
+    left: -60px;
+    top: 13px;
+}
 
 
 /* ************** blog div ************** */
