@@ -24,7 +24,7 @@ body {
 }
 
 .mode:hover {
-    color: goldenrod;
+    color: purple;
 }
 
 .container {
@@ -311,7 +311,7 @@ a:hover {
 }
 
 #blog h2 {
-    font-size: 28px;
+    font-size: 23px;
 }
 
 /* styles the actual box that each blog-post goes into */
@@ -325,6 +325,7 @@ a:hover {
     align-items: center;
     border-radius: 0.8rem;
     margin: 2% 0;
+    height: 400px;
 }
 
 .blog-post-img {
