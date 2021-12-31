@@ -12,6 +12,8 @@
     --button-colour: #c96567;
     /* button with hover colour */
     --button-hover-colour: #800020;
+    /* read more hover colour */
+    --read-color: white;
     /* dark mode/light mode hover colour */
     --toggle-colour: purple;
 }
@@ -20,17 +22,19 @@
     /* colour of the site background */
     --primary-colour: #15202b;
     /* colour of the text */
-    --text-colour: black;
+    --text-colour: #E8E6D9;
     /* when grey is used as a secondary color */
     --side-colour: grey;
     /* colour of the boxes, blogs, and header */
-    --box-colour: white;
+    --box-colour: #6497b1;
     /* button no hover colour */
-    --button-colour: #c96567;
+    --button-colour: #b042ff;
     /* button with hover colour */
-    --button-hover-colour: #800020;
+    --button-hover-colour: #9300ff;
+    /* read more hover colour */
+    --read-color: black;
     /* dark mode/light mode hover colour */
-    --toggle-colour: purple;
+    --toggle-colour: gold;
 }
 
 
@@ -53,24 +57,16 @@ body {
     padding: 0;
 }
 
-.main-body {
-
-}
-
 .mode {
     color: var(--text-colour);
     font-weight: 900;
-}
-
-.mode:hover {
-    color: var(--toggle-colour);
+    color: inherit;
 }
 
 .container {
     margin: 0;
     padding: 0;
     width: 100%;
-    /* background-color: lawngreen; */
 }
 
 * {
@@ -79,6 +75,7 @@ body {
 
 nav a {
     font-size: 20px;
+    color: white;
 }
 
 .light {
@@ -95,6 +92,14 @@ nav a {
 
 .blogImages {
     width: 100px;
+}
+
+#navbar, #toggle {
+    color: white;
+}
+
+#toggle:hover {
+    color: var(--toggle-colour);
 }
 
 /* ************** introduction div ************** */ 
@@ -268,7 +273,7 @@ a:hover {
 }
 
 .project-date {
-    color: var(--side-colour);
+    color: var(--text-colour);
 }
 
 .bottom a {
@@ -283,7 +288,7 @@ a:hover {
 
 .bottom a:hover {
     background-color: var(--button-hover-colour);
-    color: var(--box-colour);
+    color: var(--read-color);
 }
 
 .project-icon, .scroll-icon {
@@ -392,7 +397,7 @@ a:hover {
 
 .blog-post-date {
     display: block;
-    color: var(--side-colour);
+    color: var(--text-colour);
     font-size: 1.6rem;
     font-weight: 600;
     margin: 0.5rem 0;
@@ -425,7 +430,7 @@ a:hover {
 
 .blog-post-cta:hover {
     background-color: var(--button-hover-colour);
-    color: var(--box-colour);
+    color: var(--read-color);
 }
 
 @media screen and (max-width: 1068px) {
