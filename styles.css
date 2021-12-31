@@ -15,7 +15,7 @@
     /* read more hover colour */
     --read-color: white;
     /* dark mode/light mode hover colour */
-    --toggle-colour: purple;
+    --toggle-colour: #9300ff;
 }
 
 .dark-theme {
@@ -26,7 +26,7 @@
     /* when grey is used as a secondary color */
     --side-colour: grey;
     /* colour of the boxes, blogs, and header */
-    --box-colour: #6497b1;
+    --box-colour: #3a6d8c;
     /* button no hover colour */
     --button-colour: #b042ff;
     /* button with hover colour */
