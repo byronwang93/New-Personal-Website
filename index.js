@@ -27,12 +27,13 @@ $(".toggle").click(function() {
             document.body.classList.toggle("dark-theme");
         
             var audio = new Audio();
-            
-            if (document.body.classList.contains("mainToggle")) {
-                audio.src = "click.mp3";
-            } else {
-                audio.src = "../click.mp3";
-            }
+
+            audio.src = "click.mp3";
+            // if (document.body.classList.contains("mainToggle")) {
+            //     audio.src = "click.mp3";
+            // } else {
+            //     audio.src = "../click.mp3";
+            // }
 
             audio.play();
         
