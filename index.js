@@ -17,9 +17,12 @@
 //     }
 // } 
 
-var elements = document.getElementsByTagName("form");
+// var elements = document.getElementsByTagName("form");
+var elements = document.getElementsByClassName("toggle");
 
-$(".toggle").click(function() {
+$(".toggle").click(toggleFunction());
+
+function toggleFunction() {
     for (var i = 0; i < elements.length; i++) {
         var element = elements[i];
     
@@ -28,20 +31,20 @@ $(".toggle").click(function() {
         
             var audio = new Audio();
 
-            audio.src = "click.mp3";
-            // if (document.body.classList.contains("mainToggle")) {
-            //     audio.src = "click.mp3";
-            // } else {
-            //     audio.src = "../click.mp3";
-            // }
+            // audio.src = "click.mp3";
+            if (document.body.classList.contains("mainToggle")) {
+                audio.src = "click.mp3";
+            } else {
+                audio.src = "../click.mp3";
+            }
 
             audio.play();
         
             if (document.body.classList.contains("dark-theme")) {
-                icon.innerHTML = "Too Dark? <i class='far fa-sun'></i>";
+                element.innerHTML = "Too Dark? <i class='far fa-sun'></i>";
             } else {
-                icon.innerHTML = "Too Bright? <i class='far fa-moon'></i>";
+                element.innerHTML = "Too Bright? <i class='far fa-moon'></i>";
             }
         } 
     }
-})
+}
