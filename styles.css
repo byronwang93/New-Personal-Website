@@ -494,3 +494,79 @@ a:hover {
 .footer p {
     font-size: 20px;
 }
+
+.sideFooter {
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 1%;
+}
+
+/* ******************* project page setup ******************* */
+
+
+
+
+
+/* ******************* blog page setup ******************* */
+.blog-page {
+    display: inline-block;
+    /* text-align: center; */
+}
+
+.blogTitle {
+    position: relative;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.blogDate {
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.blog-page h3 {
+    color: var(--button-hover-colour);
+}
+
+.blog-page p, li {
+    font-size: 19px;
+    margin: 0;
+}
+
+.blogContent {
+    margin: 4rem 4rem;
+}
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens */
+
+/* media query template */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .blog-page p, li {
+        font-size: 12px;
+    }
+
+    .blog-page h3 {
+        font-size: 14px;
+    }
+
+    .blog-page h1 {
+        font-size: 16px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+    .blog-page p, li {
+        font-size: 17px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+}
+
