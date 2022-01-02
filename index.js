@@ -13,4 +13,4 @@ icon.onclick = function() {
     } else {
         icon.innerHTML = "Too Bright? <i class='far fa-moon'></i>";
     }
-}
+} 
