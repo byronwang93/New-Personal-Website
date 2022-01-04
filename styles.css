@@ -529,7 +529,7 @@ a:hover {
     color: var(--button-hover-colour);
 }
 
-.blog-page p, li {
+.blog-page p, li, blockquote {
     font-size: 19px;
     margin: 0;
 }
@@ -537,6 +537,25 @@ a:hover {
 .blogContent {
     margin: 4rem 4rem;
 }
+
+blockquote {
+    background: var(--box-colour);
+    border-left: 10px solid var(--side-colour);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+blockquote p {
+    display: inline;
+  }
 
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
@@ -546,7 +565,7 @@ a:hover {
 /* media query template */
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .blog-page p, li {
+    .blog-page p, li, blockquote {
         font-size: 12px;
     }
 
@@ -559,7 +578,7 @@ a:hover {
     }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-    .blog-page p, li {
+    .blog-page p, li, blockquote {
         font-size: 17px;
     }
 }
