@@ -501,25 +501,20 @@ a:hover {
     padding-bottom: 1%;
 }
 
-/* ******************* project page setup ******************* */
 
-
-
-
-
-/* ******************* blog page setup ******************* */
+/* ******************* blog page and project page setup ******************* */
 .blog-page {
     display: inline-block;
     /* text-align: center; */
 }
 
-.blogTitle {
+.blogTitle, .projectTitle {
     position: relative;
     margin-top: 6rem;
     text-align: center;
 }
 
-.blogDate {
+.blogDate, .projectDate {
     font-size: 20px;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -534,7 +529,7 @@ a:hover {
     margin: 0;
 }
 
-.blogContent {
+.blogContent, .projectContent {
     margin: 4rem 4rem;
 }
 
@@ -556,6 +551,10 @@ blockquote:before {
 blockquote p {
     display: inline;
   }
+
+.project-icons {
+    font-size: 23px;
+}
 
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
