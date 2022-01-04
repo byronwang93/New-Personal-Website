@@ -742,6 +742,7 @@ figcaption {
 @media (min-width: 769px) and (max-width: 1024px) {
     .right-text {
         font-size: 15px;
+        top: 340px;
     }
 }
 
@@ -774,6 +775,7 @@ figcaption {
         /* margin-top: 2rem; */
         margin-left: 1.5rem;
         text-align: left;
+        top: 340px;
     }
 
     .about-me, .intro-big-text {
