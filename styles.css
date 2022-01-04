@@ -111,7 +111,7 @@ nav a {
     padding: 0;
     display: flex;
 
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 
     transform: scale(0.8, 0.8);
     -ms-transform: scale(0.8, 0.8); /* IE 9 */
@@ -124,11 +124,12 @@ nav a {
 
 /* right side of intro (text) -------------------------------- */
 .right-text {
+    /* padding-top: 10rem; */
     width: 60%;
     height: fit-content;
     position: relative;
     margin-left: 3rem;
-    background-color: green;
+    /* background-color: green; */
 
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -154,7 +155,11 @@ nav a {
     width: 40%;
     height: 100%;
     text-align: center;
-    background-color: red;
+    /* background-color: red; */
+}
+
+.left-images-copy {
+    display: none;
 }
 
 /* Byron Wang text */
@@ -587,7 +592,61 @@ figcaption {
 
 /* media query template */
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 465px) {
+    .left-images-copy {
+        display: inline-flex;
+        margin: 2rem 2rem;
+    }
+
+    #about-me {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .right-text {
+        width: 100%;
+        margin: 0;
+        font-size: 12px;
+        top: 18rem;
+    }
+
+    .profile {
+        width: 150px;
+        height: 150px;
+        top: 5rem;
+        margin-right: 1rem;
+    }
+
+    .intro-big-text {
+        font-size: 10px;
+        /* top: -10px; */
+        /* margin-bottom: 2rem; */
+    }
+
+    .student-text {
+        font-size: 6px;
+        top: 105px;
+        /* margin-top: 1rem; */
+    }
+
+    .indiv-icon {
+        margin-left: 2px;
+        margin-right: 2px;
+        cursor: pointer;
+    } 
+
+    .left-images {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .left-images-copy {
+        display: inline-flex;
+        margin: 2rem 2rem;
+    }
+
     .blog-page p, li, blockquote {
         font-size: 12px;
     }
@@ -607,6 +666,45 @@ figcaption {
 
     figcaption {
         font-size: 12px;
+    }
+
+    #about-me {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .right-text {
+        width: 100%;
+        margin: 0;
+        font-size: 12px;
+        top: 18rem;
+    }
+
+    .profile {
+        width: 180px;
+        height: 180px;
+        top: 4rem;
+        margin-right: 1rem;
+    }
+
+    .intro-big-text {
+        font-size: 26px;
+        top: 100px;
+    }
+
+    .student-text {
+        font-size: 16px;
+        top: 105px;
+    }
+
+    .icons {
+        font-size: 10px;
+        top: 110px;
+    }
+
+    .left-images {
+        /* width: 80%; */
+        display: none;
     }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -639,7 +737,7 @@ figcaption {
     .intro-big-text {
         font-size: 26px;
     }
-    
+
 }
 @media (min-width: 769px) and (max-width: 1024px) {
     .right-text {
@@ -661,10 +759,6 @@ figcaption {
 
 @media (min-width: 768px) and (max-width: 991px) {
 
-    #about-me {
-        /* width: 1%; */
-    }
-
     .mainPage {
         text-align: center;
     }
@@ -672,6 +766,7 @@ figcaption {
     .profile {
         height: 250px;
         width: 250px;
+        top: 130px;
     }
     
     .right-text {
@@ -684,6 +779,10 @@ figcaption {
     .about-me, .intro-big-text {
         font-size: 32px;
         padding-bottom: 1rem;
+    }
+
+    .intro-big-text {
+        top: 150px;
     }
 
     .student-text {
