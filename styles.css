@@ -556,6 +556,19 @@ blockquote p {
     font-size: 23px;
 }
 
+.postPicture {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 18px;
+}
+
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
 769px — 1024px: Small screens, laptops
@@ -575,10 +588,28 @@ blockquote p {
     .blog-page h1 {
         font-size: 16px;
     }
+
+    .postPicture {
+        width: 170px;
+        height: 170px;
+    }
+
+    figcaption {
+        font-size: 12px;
+    }
 }
 @media (min-width: 481px) and (max-width: 768px) {
     .blog-page p, li, blockquote {
         font-size: 17px;
+    }
+
+    .postPicture {
+        width: 200px;
+        height: 200px;
+    }
+
+    figcaption {
+        font-size: 15px;
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
