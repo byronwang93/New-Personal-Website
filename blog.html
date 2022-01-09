@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog ☕️</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS/Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+ 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <!-- icons from fontawesome -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+ 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light mainToggle mainPage">
+
+  <div class="content blogContent">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar">
+        <div class="container-fluid inner-nav">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#blog">Blog</a>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+              <a class="nav-link active mode toggle mainToggle" id="toggle" aria-current="page" href="javascript:void(0);">Too Bright? <i class="far fa-moon"></i></a>
+            </form>
+          </div>
+        </div>
+    </nav>
+  
+  <!-- blog card!!!!!!!!!!! -->
+
+  <!-- /* blog card layout from: https://blog.avada.io/css/blog-cards#blog-posts-card-layout-booligoosh */ -->
+
+  <div class="blogTitle">
+    <h1>Blog ☕️</h1>
+    <p class="project-page-description">Here's a place where my thoughts come to relax! 😌</p>
+  </div>
+  <!-- <div class="spacer" id="blog">
+    <h1 class="subheading blogTitle" >Blog ☕️</h1>
+  </div> -->
+
+  <section class="cards-wrapper">
+    <div class="card-grid-space">
+      <a class="card" href="blog-posts/first-hack.html" style="--bg-img: url(images/blog2.jpeg)">
+        <div>
+          <h1>My First Hackathon Experience</h1>
+          <p>With only introductory web development and word of mouth from friends, here's how my first hackathon went (and what I learned from it). :D</p>
+          <div class="date">27 Dec 2021</div>
+          <div class="tags">
+            <div class="tag">Coding</div>
+            <div class="tag">Hackathon</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="card-grid-space">
+      <a class="card" href="blog-posts/introBlog.html" style="--bg-img: url(images/blog1.jpeg)">
+        <div>
+          <h1>Welcome to My Website!</h1>
+          <p>The first blog on the site! :) Check me out to learn how I got to this point and what I intend to do from here!</p>
+          <div class="date">20 Dec 2021</div>
+          <div class="tags">
+            <div class="tag">Beginnings</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- blog card!!!!!!!!!!! -->
+
+  <div class="footer container-fluid">
+      <footer id="footer">
+        <p>© Byron Wang 2021 :')</p>
+      </footer>
+  </div>
+
+  </div>
+    <!-- JavaScript/jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
