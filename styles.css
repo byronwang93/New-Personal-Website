@@ -118,7 +118,7 @@ nav a {
     display: flex;
     box-sizing: border-box;
 
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 
     transform: scale(0.9, 0.9);
     -ms-transform: scale(0.9, 0.9); /* IE 9 */
@@ -136,7 +136,7 @@ nav a {
     height: fit-content;
     position: relative;
     margin-left: 3rem;
-    background-color:saddlebrown;
+    /* background-color:saddlebrown; */
 
     /* top: 50%;
     -ms-transform: translateY(-50%);
@@ -161,7 +161,7 @@ nav a {
 .left-images {
     width: 40%;
     text-align: center;
-    background-color: red;
+    /* background-color: red; */
     box-sizing: border-box;
 }
 
@@ -765,7 +765,9 @@ figcaption {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+
+/* @media (min-width: 768px) and (max-width: 991px) { */
+@media (min-width: 482px) and (max-width: 991px) {
 
     #about-me {
         flex-direction: column;
@@ -777,8 +779,8 @@ figcaption {
     }
     
     .profile {
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
         /* top: 130px; */
     }
     
@@ -798,7 +800,7 @@ figcaption {
 
     .about-me, .intro-big-text {
         font-size: 32px;
-        /* padding-bottom: 1rem; */
+        padding-bottom: 1rem;
     }
 
     .student-text {
@@ -820,5 +822,11 @@ figcaption {
 @media (min-width: 1200px) {
     .about-me {
         margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 1399px) {
+    .right-text {
+        font-size: 15px;
     }
 }
