@@ -114,31 +114,32 @@ nav a {
     position: relative;
     width: 100%;
     padding: 0;
+    margin-top: 0;
     display: flex;
 
     /* background-color: greenyellow; */
 
-    transform: scale(0.8, 0.8);
-    -ms-transform: scale(0.8, 0.8); /* IE 9 */
-    -webkit-transform: scale(0.8, 0.8); /* Safari and Chrome */
-    -o-transform: scale(0.8, 0.8); /* Opera */
-    -moz-transform: scale(0.8, 0.8); /* Firefox */
+    transform: scale(0.9, 0.9);
+    -ms-transform: scale(0.9, 0.9); /* IE 9 */
+    -webkit-transform: scale(0.9, 0.9); /* Safari and Chrome */
+    -o-transform: scale(0.9, 0.9); /* Opera */
+    -moz-transform: scale(0.9, 0.9); /* Firefox */
 
 }
 
 
 /* right side of intro (text) -------------------------------- */
 .right-text {
-    /* padding-top: 10rem; */
+    margin-top: 2rem;
     width: 60%;
     height: fit-content;
     position: relative;
     margin-left: 3rem;
     /* background-color: green; */
 
-    top: 50%;
+    /* top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 /* About me subheading */
@@ -158,9 +159,9 @@ nav a {
 /* left side of intro -------------------------------- */
 .left-images {
     width: 40%;
-    height: 100%;
     text-align: center;
     /* background-color: red; */
+    box-sizing: border-box;
 }
 
 .left-images-copy {
@@ -170,20 +171,22 @@ nav a {
 /* Byron Wang text */
 .intro-big-text {
     position: relative;
+    padding-top: 1rem;
     /* left: 20%; */
-    bottom: -135px;
+    /* bottom: -135px; */
 }
 
 .student-text {
     font-size: 20px;
     position: relative;
     color: var(--side-colour);
-    top: 160px;
+    padding: 1rem 0;
+    /* top: 160px; */
 }
 
 .profile {
     position: relative;
-    top: 110px;
+    margin-top: 3rem;
 }
 
 .indiv-icon {
@@ -204,7 +207,7 @@ nav a {
 .icons {
     text-align: center;
     position: relative;
-    top: 180px;
+    /* top: 180px; */
 }
 
 a {
