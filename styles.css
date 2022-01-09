@@ -110,12 +110,13 @@ nav a {
 /* ************** introduction div ************** */ 
 
 #about-me {
-    height: 780px;
+    height: fit-content;
     position: relative;
     width: 100%;
     padding: 0;
     margin-top: 0;
     display: flex;
+    box-sizing: border-box;
 
     /* background-color: greenyellow; */
 
