@@ -118,7 +118,7 @@ nav a {
     display: flex;
     box-sizing: border-box;
 
-    /* background-color: greenyellow; */
+    background-color: greenyellow;
 
     transform: scale(0.9, 0.9);
     -ms-transform: scale(0.9, 0.9); /* IE 9 */
@@ -136,7 +136,7 @@ nav a {
     height: fit-content;
     position: relative;
     margin-left: 3rem;
-    /* background-color: green; */
+    background-color: green;
 
     /* top: 50%;
     -ms-transform: translateY(-50%);
@@ -161,7 +161,7 @@ nav a {
 .left-images {
     width: 40%;
     text-align: center;
-    /* background-color: red; */
+    background-color: red;
     box-sizing: border-box;
 }
 
@@ -747,10 +747,9 @@ figcaption {
     }
 
 }
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1025px) {
     .right-text {
         font-size: 15px;
-        top: 340px;
     }
 }
 
@@ -768,6 +767,11 @@ figcaption {
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+    #about-me {
+        flex-direction: column;
+        height: fit-content;
+    }
+
     .mainPage {
         text-align: center;
     }
@@ -775,33 +779,34 @@ figcaption {
     .profile {
         height: 250px;
         width: 250px;
-        top: 130px;
+        /* top: 130px; */
     }
     
     .right-text {
         font-size: 13px;
         /* margin-top: 2rem; */
-        margin-left: 1.5rem;
+        /* margin-left: 1.5rem; */
         text-align: left;
-        top: 340px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .left-images {
+        width: 100%;
     }
 
     .about-me, .intro-big-text {
         font-size: 32px;
-        padding-bottom: 1rem;
-    }
-
-    .intro-big-text {
-        top: 150px;
+        /* padding-bottom: 1rem; */
     }
 
     .student-text {
         font-size: 20px;
-        top: 145px;
+        /* top: 145px; */
     }
 
     .icons {
-        top: 160px;
+        /* top: 160px; */
         font-size: 13px;
     }
 }
