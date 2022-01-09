@@ -600,60 +600,9 @@ figcaption {
 
 /* media query template */
 
-@media (max-width: 465px) {
-    .left-images-copy {
-        display: inline-flex;
-        margin: 2rem 2rem;
-    }
 
-    #about-me {
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    .right-text {
-        width: 100%;
-        margin: 0;
-        font-size: 12px;
-        top: 18rem;
-    }
-
-    .profile {
-        width: 150px;
-        height: 150px;
-        top: 5rem;
-        margin-right: 1rem;
-    }
-
-    .intro-big-text {
-        font-size: 10px;
-        /* top: -10px; */
-        /* margin-bottom: 2rem; */
-    }
-
-    .student-text {
-        font-size: 6px;
-        top: 105px;
-        /* margin-top: 1rem; */
-    }
-
-    .indiv-icon {
-        margin-left: 2px;
-        margin-right: 2px;
-        cursor: pointer;
-    } 
-
-    .left-images {
-        display: none;
-    }
-}
 
 @media (max-width: 480px) {
-
-    .left-images-copy {
-        display: inline-flex;
-        margin: 2rem 2rem;
-    }
 
     .blog-page p, li, blockquote {
         font-size: 12px;
@@ -676,88 +625,22 @@ figcaption {
         font-size: 12px;
     }
 
-    #about-me {
-        flex-direction: column;
-        height: fit-content;
-    }
-
-    .right-text {
-        width: 100%;
-        margin: 0;
-        font-size: 12px;
-        top: 18rem;
-    }
-
-    .profile {
-        width: 180px;
-        height: 180px;
-        top: 4rem;
-        margin-right: 1rem;
-    }
-
-    .intro-big-text {
-        font-size: 26px;
-        top: 100px;
-    }
-
-    .student-text {
-        font-size: 16px;
-        top: 105px;
-    }
-
-    .icons {
-        font-size: 10px;
-        top: 110px;
-    }
-
-    .left-images {
-        /* width: 80%; */
-        display: none;
-    }
 }
 @media (min-width: 481px) and (max-width: 768px) {
     .blog-page p, li, blockquote {
         font-size: 17px;
     }
 
-    .postPicture {
-        width: 200px;
-        height: 200px;
-    }
-
     figcaption {
         font-size: 15px;
     }
 
-    .profile {
-        height: 200px;
-        width: 200px;
-    }
-
-    .right-text {
-        font-size: 12px;
-    }
-
-    .icons {
-        font-size: 15px;
-    }
-
-    .intro-big-text {
-        font-size: 26px;
-    }
-
 }
-@media (min-width: 769px) and (max-width: 1025px) {
+/* @media (min-width: 769px) and (max-width: 1025px) {
     .right-text {
         font-size: 15px;
     }
-}
-
-@media (min-width: 481px) and (max-width: 530px) {
-    .right-text {
-        font-size: 11px;
-    }
-}
+} */
 
 @media (min-width: 1025px) and (max-width: 1200px) {
     .about-me {
@@ -766,7 +649,7 @@ figcaption {
 }
 
 
-/* @media (min-width: 768px) and (max-width: 991px) { */
+
 @media (min-width: 482px) and (max-width: 991px) {
 
     #about-me {
@@ -781,6 +664,7 @@ figcaption {
     .profile {
         height: 300px;
         width: 300px;
+        margin-top: 0;
         /* top: 130px; */
     }
     
@@ -796,6 +680,7 @@ figcaption {
 
     .left-images {
         width: 100%;
+        height: fit-content;
     }
 
     .about-me, .intro-big-text {
@@ -810,6 +695,57 @@ figcaption {
 
     .icons {
         /* top: 160px; */
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 481px) {
+    #about-me {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 1rem;
+    }
+
+    .mainPage {
+        text-align: center;
+        box-sizing: border-box;
+        display: flex;
+    }
+    
+    .profile {
+        height: 230px;
+        width: 230px;
+        margin-top: 0;
+        /* top: 130px; */
+    }
+    
+    .right-text {
+        font-size: 13px;
+        text-align: left;
+        margin-left: 0;
+        /* padding-top: 0;
+        margin-top: 0; */
+        width: 100%;
+        height: fit-content;
+    }
+
+    .left-images {
+        width: 100%;
+        height: fit-content;
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    .about-me, .intro-big-text {
+        font-size: 32px;
+        padding-bottom: 1rem;
+    }
+
+    .student-text {
+        font-size: 20px;
+    }
+
+    .icons {
         font-size: 13px;
     }
 }
