@@ -4,21 +4,20 @@ Welcome to my personal website! Since September of 2021, I've been using this we
 
 I'll be updating this ReadMe after major updates to the site so stay tuned!
 
-# UPDATE Jan 9, 2022
+### UPDATE Jan 9, 2022
 **Changed:**
 - layout of home page to be in separate pages
 - layout of blog and project sections
-- added responsiveness to the pages of the website (excluding the main page)
+- added responsiveness to the pages of the website
 
 **Future Update(s):**
-- complete responsiveness for main about me page
 - update the dark/light mode feature to retain the lighting after a user comes back to the site
 - improve the UI to be more modern by playing with CSS animations
   
   
 
 
-# UPDATE Dec 31, 2021
+### UPDATE Dec 31, 2021
 Initial deployment of site
 
 **Update(s) for the future:**
