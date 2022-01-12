@@ -13,8 +13,8 @@ I'll be updating this ReadMe after major updates to the site so stay tuned!
 **Future Update(s):**
 - update the dark/light mode feature to retain the lighting after a user comes back to the site
 - improve the UI to be more modern by playing with CSS animations
-  
-  
+
+<br/> 
 
 
 ### UPDATE Dec 31, 2021
